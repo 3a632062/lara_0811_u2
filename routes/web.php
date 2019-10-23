@@ -15,6 +15,19 @@
 //    return view('welcome');
 //});
 
+//Route::get('/', function() {
+//    return 'welcome';
+//});
+
+
+//Route::get('/', function() {
+//    return view('welcome');
+//});
+
 Route::get('/', function() {
-    return 'welcome';
+    return redirect('welcome');
+});
+
+Route::get('welcome', function() {
+    return view('welcome');
 });
