@@ -58,4 +58,8 @@ Route::get('dashboard', function() {
     return 'dashboard';
 });
 
-
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('dashboard', function() {
+        return 'admin dashboard';
+    });
+});
